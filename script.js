@@ -39,34 +39,44 @@ function playRound(playerSelection, computerSelection)  {
     if (computerSelection === "Rock") {
         if (playerSelection === "Rock") {
             console.log("You selected Rock.  Computer selected Rock.");
+            alert("You selected Rock.  Computer selected Rock.");
             return "It's a tie!";
         } else if (playerSelection === "Paper") {
             console.log("You selected Paper.  Computer selected Rock.");
+            alert("You selected Paper.  Computer selected Rock.");
+            
             return "You win!";
         } else if (playerSelection === "Scissors") {
             console.log("You selected Scissors.  Computer selected Rock.");
+            alert("You selected Scissors.  Computer selected Rock.");
             return "You lose!";
         }
     } else if (computerSelection === "Paper") {
         if (playerSelection === "Rock") {
             console.log("You selected Rock.  Computer selected Paper.");
+            alert("You selected Rock.  Computer selected Paper.");
             return "You lose!";
         } else if (playerSelection === "Paper") {
             console.log("You selected Paper.  Computer selected Paper.");
+            alert("You selected Paper.  Computer selected Paper.");
             return "It's a tie!";
         } else if (playerSelection === "Scissors") {
             console.log("You selected Scissors.  Computer selected Paper.");
+            alert("You selected Scissors.  Computer selected Paper.");
             return "You win!";
         }
     } else if (computerSelection === "Scissors") {
         if (playerSelection === "Rock") {
             console.log("You selected Rock.  Computer selected Scissors.");
+            alert("You selected Rock.  Computer selected Scissors.");
             return "You win!";
         } else if (playerSelection === "Paper") {
             console.log("You selected Paper.  Computer selected Scissors.");
+            alert("You selected Paper.  Computer selected Scissors.");
             return "You lose!";
         } else if (playerSelection === "Scissors") {
             console.log("You selected Scissors.  Computer selected Scissors.");
+            alert("You selected Scissors.  Computer selected Scissors.");
             return "It's a tie!";
         }       
     }
@@ -85,12 +95,15 @@ function game() {
             playerWins++;
             i++;
             console.log("Your score: " + playerWins + " Computer score: " + compWins);
+            alert("Your score: " + playerWins + " Computer score: " + compWins);
         } else if (x === "You lose!") {
             compWins++;
             i++;
             console.log("Your score: " + playerWins + " Computer score: " + compWins);
+            alert("Your score: " + playerWins + " Computer score: " + compWins);
         } else {
             console.log("Your score: " + playerWins + " Computer score: " + compWins);
+            alert("Your score: " + playerWins + " Computer score: " + compWins);
         }
     }
     if (playerWins > compWins) {
